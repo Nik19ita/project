@@ -26,19 +26,15 @@ const ItemList = ({
         </Link>
       </div>
 
-      <div
+      <img
         className={`absolute w-[118px] h-[118px] bottom-0 right-0
          ${
            index === 0 &&
            "sm:relative bottom-[-18px] sm:w-[230px] sm:h-[230px] sm:left-[50%] sm:translate-x-[-50%] mt-[-10px]"
          }`}
-      >
-        <img
-          className={`w-full h-full`}
-          src={imgSrc}
-          alt={`картинка ${index}`}
-        />
-      </div>
+        src={imgSrc}
+        alt={`картинка ${index}`}
+      />
     </article>
   );
 };
