@@ -15,9 +15,9 @@ const ItemList = ({
         breakInside: "avoid",
       }}
     >
-      <div className="relative h-full min-h-[164px]">
+      <div className="relative h-full sm:min-h-[164px] min-h-[130px] w-[80%] sm:w-full">
         <h2 className="text-[20px] font-medium mb-[4px]">{title}</h2>
-        <p className="text-[15px] font-normal">{description}</p>
+        <p className="text-[15px] font-normal pb-[30px]">{description}</p>
         <Link
           href="#"
           className="bg-[#0B5DD7] px-[14px] rounded-[34px] absolute bottom-0"
