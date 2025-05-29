@@ -9,7 +9,7 @@ const ItemList = ({
 }) => {
   return (
     <article
-      className="px-[24px] py-[18px] relative mb-[20px] sm:w-[310px] rounded-[10px] bg-white overflow-hidden "
+      className="px-[24px] py-[18px] relative mb-[20px] sm:max-w-[310px] rounded-[10px] bg-white overflow-hidden "
       style={{
         pageBreakInside: "avoid",
         breakInside: "avoid",
