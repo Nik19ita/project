@@ -4,7 +4,13 @@ import ItemList from "./components/ItemList";
 const ListCards = () => {
   return (
     <div>
-      <ul className="columns-1 sm:columns-2 gap-x-[20px] w-fit mx-auto mt-[100px] px-[15px]">
+      <ul
+        className="columns-1 sm:columns-2 gap-x-[20px] w-fit mx-auto mt-[100px] px-[15px]"
+        style={{
+          pageBreakInside: "avoid",
+          breakInside: "avoid",
+        }}
+      >
         {data.map((cardInfo, index) => {
           return (
             <ItemList

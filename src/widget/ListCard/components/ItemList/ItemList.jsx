@@ -10,13 +10,10 @@ const ItemList = ({
   return (
     <article
       className="px-[24px] py-[18px] relative mb-[20px] sm:max-w-[310px] rounded-[10px] bg-white overflow-hidden "
-      style={{
-        pageBreakInside: "avoid",
-        breakInside: "avoid",
-      }}
+      
     >
       <div className="relative h-full sm:min-h-[164px] min-h-[130px] w-[80%] sm:w-full">
-        <h2 className="text-[20px] font-medium mb-[4px]">{title}</h2>
+        <h2 className="text-[20px] font-medium mb-[4px] break-all">{title}</h2>
         <p className="text-[15px] font-normal pb-[30px]">{description}</p>
         <Link
           href="#"
