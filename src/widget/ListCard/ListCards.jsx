@@ -5,7 +5,7 @@ const ListCards = () => {
   return (
     <div>
       <ul
-        className="columns-1 sm:columns-2 gap-x-[20px] w-fit mx-auto my-[100px] px-[15px]"
+        className="columns-1 sm:columns-2 gap-x-[20px] w-fit mx-auto py-[100px] px-[15px]"
         style={{
           pageBreakInside: "avoid",
           breakInside: "avoid",
