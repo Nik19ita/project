@@ -1,5 +1,5 @@
 import data from "../../data/data.js";
-import ItemList from "./components/ItemList";
+import ItemList from "./components/ItemList/index.js";
 
 const ListCards = () => {
   return (
