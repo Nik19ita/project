@@ -8,24 +8,25 @@ const ItemList = ({
   index,
 }) => {
   return (
-    <article className="px-[24px] py-[18px] relative mb-[20px] sm:max-w-[310px] rounded-[10px] bg-white overflow-hidden ">
-      <div className="relative h-full sm:min-h-[164px] min-h-[130px] w-[80%] sm:w-full">
-        <h2 className="text-[20px] font-medium mb-[4px] break-all">{title}</h2>
-        <p className="text-[15px] font-normal pb-[30px]">{description}</p>
+    <article className="relative mb-[20px] overflow-hidden rounded-[10px] bg-white px-[24px] py-[18px] sm:max-w-[310px]">
+      <div className="relative h-full min-h-[130px] w-[80%] sm:min-h-[164px] sm:w-full">
+        <h2 className="mb-[4px] text-[20px] font-medium wrap-break-word">
+          {title}
+        </h2>
+        <p className="pb-[30px] text-[15px] font-normal">{description}</p>
         <Link
           href="#"
-          className="bg-[#0B5DD7] px-[14px] rounded-[34px] absolute bottom-0"
+          className="absolute bottom-0 rounded-[34px] bg-[#0B5DD7] px-[14px]"
         >
-          <span className="text-[15px] text-white font-medium">{link}</span>
+          <span className="text-[15px] font-medium text-white">{link}</span>
         </Link>
       </div>
 
       <img
-        className={`absolute w-[118px] h-[118px] bottom-0 right-0
-         ${
-           index === 0 &&
-           "sm:relative bottom-[-18px] sm:w-[230px] sm:h-[230px] sm:left-[50%] sm:translate-x-[-50%] mt-[-10px]"
-         }`}
+        className={`absolute right-0 bottom-0 h-[118px] w-[118px] ${
+          index === 0 &&
+          "bottom-[-18px] mt-[-10px] sm:relative sm:left-[50%] sm:h-[230px] sm:w-[230px] sm:translate-x-[-50%]"
+        }`}
         src={imgSrc}
         alt={`картинка ${index}`}
       />
