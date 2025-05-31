@@ -8,7 +8,7 @@ const ItemList = ({
   index,
 }) => {
   return (
-    <article className="relative mb-[20px] overflow-hidden sm:rounded-[10px] bg-white px-[24px] py-[18px] sm:max-w-[310px]">
+    <article className="relative mb-[20px] overflow-hidden bg-white px-[24px] py-[18px] sm:max-w-[310px] sm:rounded-[10px]">
       <div className="relative h-full min-h-[130px] w-[80%] sm:min-h-[164px] sm:w-full">
         <h2 className="mb-[4px] text-[20px] font-medium wrap-break-word">
           {title}
