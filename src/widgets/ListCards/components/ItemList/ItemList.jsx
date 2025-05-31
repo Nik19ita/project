@@ -25,7 +25,7 @@ const ItemList = ({
       <img
         className={`absolute right-0 bottom-0 h-[118px] w-[118px] ${
           index === 0 &&
-          "sm:mt-[-10px] sm:relative sm:left-[50%] sm:h-[230px] sm:w-[230px] sm:translate-x-[-50%]"
+          "sm:relative sm:bottom-[-18px] sm:left-[50%] sm:mt-[-10px] sm:h-[230px] sm:w-[230px] sm:translate-x-[-50%]"
         }`}
         src={imgSrc}
         alt={`картинка ${index}`}
